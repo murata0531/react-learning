@@ -17,7 +17,7 @@ nginx 1.20
 コンテナ作成
 
 ```
-$ docker-compose up -d --build
+$ make init
 ```
 
 コンテナとイメージ破棄
@@ -28,21 +28,22 @@ $ make destory
 
 各種コンテナに入る
 
-```
 laravel_appコンテナ：ここでlaravelやphpなどを動かしている
+```
 $ make laravel_app
 ```
 
 react_appコンテナ：ここでnodeやreactなどを動かしている
+```
 $ make react_app
 ```
-```
 dbコンテナ：ここでmysqlを動かしている
+```
 $ make laravel_app
 ```
 
-```
 webコンテナ：ここでnginxを動かしている
+```
 $ make web
 ```
 
